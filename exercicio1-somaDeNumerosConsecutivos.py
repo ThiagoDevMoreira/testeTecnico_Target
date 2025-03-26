@@ -14,13 +14,12 @@ def calcular_soma(num):
         soma += k
     
     return soma
-    
-numero = int(input("Digite um número inteiro: "))
-resultado = calcular_soma(num)
-
-print(f"O valor da soma dos números de 1 a {num} é: {resultado}")
 
 # outra forma de fazer isso
 def calcular_soma_sem_loop(num)
     return (num + 1) * (num / 2)
     
+numero = int(input("Digite um número inteiro: "))
+resultado = calcular_soma(num)
+
+print(f"O valor da soma dos números de 1 a {num} é: {resultado}")
