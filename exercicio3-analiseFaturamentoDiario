@@ -73,9 +73,14 @@ class Program
 	}
 	
 	static float[] Preparar_Array_de_Faturamento_Diario (string caminho_do_arquivo) {
-            	string json = File.ReadAllText(caminhoArquivo);
+            	string json = File.ReadAllText(caminho_do_arquivo);
 		var dados_json = JsonSerializer.Deserialize<List<itemFaturamento>>(json);
  	    	float[] faturamento_diario = dados_json.Select(item => item.Valor).ToArray();
             	return faturamento_diario;
 	}
+}
+
+class itemFaturamento {
+    public integer Dia { get; set; }
+    public float Valor { get; set; }
 }
