@@ -2,7 +2,7 @@
 # Enquanto K < INDICE faça { K = K + 1; SOMA = SOMA + K; }
 # Imprimir(SOMA);
 # Ao final do processamento, qual será o valor da variável SOMA?
-# ** Resposta: no final a soma é 91**
+# **Resposta: no final a soma é 91**
 
 # script em pyton correspondente ao exercício 1
 def calcular_soma(num):
@@ -15,10 +15,6 @@ def calcular_soma(num):
     
     return soma
 
-# outra forma de fazer isso
-def calcular_soma_sem_loop(num)
-    return (num + 1) * (num / 2)
-    
 numero = int(input("Digite um número inteiro: "))
 resultado = calcular_soma(num)
 
